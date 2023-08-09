@@ -299,7 +299,7 @@ void st_remove(struct st_node **root, struct st_node *del)
         if (del == *root)
             *root = most;
 
-        st_replace_right(del,most);//CCCC
+        st_replace_left(del,most);//CCCC
         st_update(root,most);//DDDD
         return;
     }
